@@ -25,7 +25,7 @@ Math-Expr analizuje wyra¿enia matematyczne.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
