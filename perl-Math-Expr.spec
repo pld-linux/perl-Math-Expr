@@ -32,14 +32,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz db
+%doc README TODO db
 %{perl_sitelib}/Math/Expr.pm
 %{perl_sitelib}/Math/Expr
 %{_mandir}/man3/*
