@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Expr
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math-Expr perl module
 Summary(pl):	Modu³ perla Math-Expr
 Name:		perl-Math-Expr
 Version:	0.4
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Math-Expr module parses mathematical expressions.
 Math-Expr analizuje wyra¿enia matematyczne.
 
 %prep
-%setup -q -n Math-Expr-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
