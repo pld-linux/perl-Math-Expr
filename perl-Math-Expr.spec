@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Expr
-Summary:	Math-Expr perl module
-Summary(pl):	Modu³ perla Math-Expr
+Summary:	Math::Expr perl module
+Summary(pl):	Modu³ perla Math::Expr
 Name:		perl-Math-Expr
 Version:	0.4
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Math-Expr module parses mathematical expressions.
+Math::Expr module parses mathematical expressions.
 
 %description -l pl
-Math-Expr analizuje wyra¿enia matematyczne.
+Math::Expr analizuje wyra¿enia matematyczne.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
