@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Expr
@@ -6,7 +10,7 @@ Summary(pl):	Modu³ perla Math::Expr
 Name:		perl-Math-Expr
 Version:	0.4
 Release:	9
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2c4f7eb097bca918f4748f7843bca02b
@@ -28,6 +32,8 @@ Math::Expr analizuje wyra¿enia matematyczne.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
