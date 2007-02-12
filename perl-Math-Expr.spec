@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Expr
 Summary:	Math::Expr perl module
-Summary(pl):	Modu≥ perla Math::Expr
+Summary(pl.UTF-8):   Modu≈Ç perla Math::Expr
 Name:		perl-Math-Expr
 Version:	0.4
 Release:	10
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Math::Expr module parses mathematical expressions.
 
-%description -l pl
-Math::Expr analizuje wyraøenia matematyczne.
+%description -l pl.UTF-8
+Math::Expr analizuje wyra≈ºenia matematyczne.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
