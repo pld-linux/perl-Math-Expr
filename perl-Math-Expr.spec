@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Expr
 Summary:	Math::Expr perl module
-Summary(pl.UTF-8):   Moduł perla Math::Expr
+Summary(pl.UTF-8):	Moduł perla Math::Expr
 Name:		perl-Math-Expr
 Version:	0.4
 Release:	10
