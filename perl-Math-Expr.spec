@@ -9,7 +9,7 @@ Summary:	Math::Expr perl module
 Summary(pl.UTF-8):	Moduł perla Math::Expr
 Name:		perl-Math-Expr
 Version:	0.4
-Release:	10
+Release:	11
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
