@@ -4,7 +4,6 @@
 
 %define		pdir	Math
 %define		pnam	Expr
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Expr perl module
 Summary(pl.UTF-8):	Moduł perla Math::Expr
 Name:		perl-Math-Expr
